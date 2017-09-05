@@ -13,6 +13,7 @@ p {
   border: solid 2px black;
   border-radius: 25%;
   background: yellow;
+  text-align: center;
   
   animation: myAnimation 10s infinite;
 }
