@@ -183,12 +183,12 @@ Save your CSS file. Now, to link it to our HTML file, we need to add this in our
  <head>
  
  <title>My first website, yo !</title>
- <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="style.css">
  
  </head>
 ```
 
-Save your HTML and see if the styles were applied! Make sure that in `href="styles.css"`, "styles.css" is the exact same name as your css file. Also make sure your css file is in the same folder as your .html file!
+Save your HTML and see if the styles were applied! Make sure that in `href="style.css"`, "style.css" is the exact same name as your css file. Also make sure your css file is in the same folder as your .html file!
 
 CSS applies styles to the tags. To learn more about the style attributes, turn to google!
 
