@@ -89,9 +89,9 @@ Go to your repo page on Github and find the green button that says 'Clone or dow
 
 Unless you have an error, congrats! You just cloned your repo to your computer! You can now enter `cd [repo name]` to go into your repo.
 
-
-## Making Our Website
 ## ------------------
+## Making Our Website
+
 
 Finally, we can actually start coding. The first thing you'll want is a code text editor -- try [atom](https://atom.io/) or [brackets](http://brackets.io/). You can also work with notepad or whatever, but these will make things easier.
 
