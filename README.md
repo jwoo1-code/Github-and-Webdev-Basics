@@ -91,6 +91,7 @@ Unless you have an error, congrats! You just cloned your repo to your computer! 
 
 
 ## Making Our Website
+## ------------------
 
 Finally, we can actually start coding. The first thing you'll want is a code text editor -- try [atom](https://atom.io/) or [brackets](http://brackets.io/). You can also work with notepad or whatever, but these will make things easier.
 
