@@ -90,3 +90,125 @@ Go to your repo page on Github and find the green button that says 'Clone or dow
 Unless you have an error, congrats! You just cloned your repo to your computer! You can now enter `cd [repo name]` to go into your repo.
 
 
+## Making Our Website
+
+Finally, we can actually start coding. The first thing you'll want is a code text editor -- try [atom](https://atom.io/) or [brackets](http://brackets.io/). You can also work with notepad or whatever, but these will make things easier.
+
+In your local clone of your repo, make a new file and name it with the extension `.html`, like `index.html` or `website.html`. In this file, we'll be writing HTML, our first language! Go ahead and type: 
+
+```
+<html>
+ <head>
+ </head>
+ <body>
+
+  <h1>My first website (or whatever)</h2>
+  
+ </body>
+</html>
+```
+
+Then, go to the file and double click it. It should open up in your browser, just like a normal website would!
+
+HTML is used to format text, and tell the browser what each text is for. It works by surrounding text opening tags, like `<body>`, and closing tags, like `</body>`.  The `head` tags surround information about the website, while the `body` tags show the actual content of the website.  If any of these tags confuse you, turn to google to learn about them!
+
+Let's add a little more content to our website:
+
+```
+<html>
+ <head>
+ 
+ <title>My first website, yo !</title>
+ 
+ </head>
+ <body>
+
+  <h1>My first website (or whatever)</h2>
+  
+  <p>Here's some text in a 'paragraph' tag</p>
+  <p>Here's some more text, with a <a href="http://facebook.com">link!</a>
+  <img src="https://cdn.pixabay.com/photo/2017/01/06/19/15/soap-bubble-1958650_1280.jpg">
+  
+  <div class="myDiv"> This is a special divider</div>
+  
+  <button onclick="alert('hello world')">Here's a button </button> 
+  
+  <!-- This is an HTML comment. It won't affect the actual content of the page -->
+  
+ </body>
+</html>
+```
+
+All of this is customizable, of course, and you should try making your website to your own liking, rather than just copying this. The best way to learn code is to come up with a creative idea, and try to learn how to make it work!
+
+Now, let's learn a little CSS. CSS is another programming language, used to *stylize* our formatted text.
+
+Make a new file in the same folder, and call it `style.css` or something similar. Here's an example of some fun CSS code:
+
+```
+body {
+  background: cyan;
+}
+
+p {
+  color: red;
+  font-family: Courier;
+}
+
+.myDiv {
+  width: 400px;
+  height: 300px;
+  border: solid 2px black;
+  border-radius: 25%;
+  background: yellow;
+  
+  animation: myAnimation 10s infinite;
+}
+
+@keyframes myAnimation {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to { 
+    filter: hue-rotate(360deg);
+  }
+}
+
+```
+
+Save your CSS file. Now, to link it to our HTML file, we need to add this in our `head` tags in our html file:
+
+```
+ <head>
+ 
+ <title>My first website, yo !</title>
+ <link rel="stylesheet" href="styles.css">
+ 
+ </head>
+```
+
+Save your HTML and see if the styles were applied! Make sure that in `href="styles.css"`, "styles.css" is the exact same name as your css file. Also make sure your css file is in the same folder as your .html file!
+
+CSS applies styles to the tags. To learn more about the style attributes, turn to google!
+
+## Pushing to our Github Repo with Git
+
+So, now we have a website! Let's save it to our Github repo, so the whole world can see it!
+
+Go back to your terminal and navigate to your repo folder. There's three steps to saving to Github:
+
+1. Add your files by typing `git add *`. The astrisk * is used to mean "everything in this folder." Alternatively, we could type `git add index.html` to only submit a single files.
+
+2. Commit your files with `git commit -m "My first commit message"`. Instead of writing "my first commit message", you should really explain what changes you made in this commit. This is called a 'commit message'.  Note that commiting your code creates a log of what has been added, and gets it ready to put onto Github, but it doesn't actually transfer it yet!
+
+3. Enter `git push` to "push" all your local commits to your github repo.
+
+If you didn't get any errors, go to Github and see if your code is all there! Congratulations!
+
+## Other resources
+
+If you want to learn about how to host a website on Github, check out [this link](https://pages.github.com/) -- it's a lot easier than you'd think!
+
+If you want to learn more about HTML or CSS, I'd recommend [W3Schools](https://www.w3schools.com), or google!
+
+If you want a preview of the next lesson, look into Javascript. Javascript is easy to add to our HTML, and will let us interact with the user a lot more.
