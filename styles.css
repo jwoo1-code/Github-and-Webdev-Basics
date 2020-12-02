@@ -1,0 +1,28 @@
+body {
+    background: darkgray;
+}
+
+p {
+    color: white;
+    font-family: Iosevka-Light;
+}
+
+.myDiv {
+    width: 400px;
+    height: 300px;
+    border: solid 2px black;
+    border-radius: 25%;
+    background: blue;
+    text-align: center;
+    
+    -webkit-animation: myAnimation 10s infinite;
+}
+
+@keyframes myAnimation {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
